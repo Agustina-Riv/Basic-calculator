@@ -3,6 +3,17 @@
     margin: 50px auto;
     background-color: #b7d2d3;
     font-family: system-ui, sans-serif;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), inset 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.calculator h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #1a2a2b;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .calculator-panel {
@@ -45,4 +56,36 @@
     background: #e0f2fe;
 }
 
+p {
+    text-align: center;
+    box-sizing: border-box;
+    color: #19191a;
+}
 
+/* --- Estilos recomendados para el Historial --- */
+.history {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #a4c4c5; /* Un tono un poquito más oscuro que el fondo para diferenciarlo */
+    border-radius: 8px;
+    border: 1px solid #19191a; /* Manteniendo el estilo de los bordes del display */
+}
+
+.history p:first-child {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    text-transform: uppercase; /* Queda muy bien para pequeños títulos o etiquetas */
+    letter-spacing: 1px;
+    color: #374151; /* Un gris oscuro, menos fuerte que el negro puro */
+    text-align: left;
+    font-weight: bold;
+}
+
+.history-display {
+    margin: 0;
+    font-size: 20px;
+    text-align: right; /* Alineado a la derecha igual que la pantalla principal */
+    color: #19191a;
+    font-family: monospace; /* Le da un toque de calculadora o código matemático */
+    min-height: 24px; /* Evita que la cajita se achique cuando no hay nada escrito todavía */
+}
