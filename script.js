@@ -1,5 +1,6 @@
 const display = document.querySelector(".calculator-display");
 const keypad = document.querySelector(".calculator-keypad");
+const historyDisplay = document.querySelector(".history-display");
 
 const buttons = [
     {label: "CE", type: "clear"},
@@ -136,6 +137,10 @@ function calculateResult() {
     if (calculatorState.operator === "/") {
     result = previous / current;
     }
+    
+    // Guardar en el historial
+    historyDisplay.textContent = `${previous} ${calculatorState.operator} ${current} = ${result}`;
+
     calculatorState.currentValue = String(result);
     calculatorState.previousValue = null;
     calculatorState.operator = null;
