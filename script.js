@@ -1,6 +1,17 @@
 const display = document.querySelector(".calculator-display");
 const keypad = document.querySelector(".calculator-keypad");
 const historyDisplay = document.querySelector(".history-display");
+const btn = document.querySelector("#boton-oscuro");
+const body = document.body;
+
+btn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+        btn.textContent = "Modo claro 🌤️";
+    } else {
+        btn.textContent = "Modo oscuro 🌑";
+    }
+})
 
 const buttons = [
     {label: "CE", type: "clear"},
