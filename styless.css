@@ -1,3 +1,49 @@
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+#boton-oscuro {
+    padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px; /* Bordes muy redondeados */
+  background: #e0e0e0;
+  color: #333;
+  box-shadow: 4px 4px 10px #bcbcbc, 
+             -4px -4px 10px #ffffff;
+  transition: all 0.3s ease; /* Suaviza todos los cambios */
+  outline: none;
+}
+
+#boton-oscuro:hover {
+    transform: translateY(-2px); /* Se levanta un poquito */
+    box-shadow: 6px 6px 12px #8d8d8d, 
+               -6px -6px 12px #ffffff;
+}
+
+#boton-oscuro:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px #bcbcbc, 
+              inset -2px -2px 5px #ffffff;
+}
+
+/* Cambio de estilo del botón cuando el Body está en modo oscuro */
+body.dark-mode #boton-oscuro {
+  background: #212121;
+  color: #f0f0f0;
+  box-shadow: 4px 4px 10px #0a0a0a, 
+             -2px -2px 10px #333;
+}
+
 .calculator {
     max-width: 350px;
     margin: 50px auto;
